@@ -5,13 +5,6 @@
  * Import node modules
  */
 const mongoose = require('mongoose');
-const config = require('../config');
-const dbEnv = process.env.MONGO_ENV;
-const url = config.connection[]
-mongoose.Promise = global.Promise;
-mongoose.connect('mongodb://localhost/testingMongo', {
-  useMongoClient: true
-});
 const uniqueValidator = require('mongoose-unique-validator');
 
 /**
